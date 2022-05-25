@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: linear-gradient(to bottom, #212430, #17171a);
+    height: 100vh;
+    width: 100vw;
+}
+
 @layer components {
     .header {
         @apply bg-[#17171A] text-white h-20 flex gap-[100px] w-full p-[30px];
@@ -34,4 +40,37 @@
     .input {
         @apply bg-transparent outline-none text-white ml-3;
     }
+
+    .trendingWrapper{
+        @apply mx-auto max-w-screen-2xl;
+    }
+
+    .h1 {
+        @apply text-3xl text-white;
+    }
+
+    .rate {
+        @apply flex items-center;
+    }
+
+    .styleGreen {
+        @apply ml-2 text-[#17C784];
+    }
+
+    .styleRed {
+        @apply ml-2 text-[#EA3943];
+    }
+
+    .trendingCard{
+        @apply w-full p-5 py-3 pb-0 bg-[#323546] rounded-xl text-white mr-3
+    }
+
+    .trendingCardWrapper{
+        @apply flex items-center justify-between
+    }
+
+    .button {
+        @apply flex items-center text-[#6188FF] cursor-pointer whitespace-nowrap justify-between;
+    }
+
 }
