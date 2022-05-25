@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .header {
+        @apply bg-[#17171A] text-white h-20 flex gap-[100px] w-full p-[30px];
+    }
+
+    .headerWrapper{
+        @apply flex justify-center h-full max-w-screen-xl mx-auto px-4 ;
+    }
+
+    .nav{
+        @apply flex justify-center items-center gap-[20px];
+    }
+
+    .navItem{
+        @apply relative mr-1 cursor-pointer hover:opacity-60;
+    }
+
+    .navLink{
+        @apply text-white flex mx-[10px];
+    }
+
+    .badge{
+        @apply rounded-full bg-blue-600 h-1 w-1 absolute bottom-5 right-0 top-1 ring-4;
+    }
+
+    .inputContainer {
+        @apply flex items-center justify-between p-2 bg-[#171924];
+    }
+
+    .input {
+        @apply bg-transparent outline-none text-white ml-3;
+    }
+}
